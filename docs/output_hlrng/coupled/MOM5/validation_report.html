@@ -1,0 +1,1006 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Validation report for ‘MOM5_Baltic’ &#8212; Testing the IOW Earth system model</title>
+    
+  <link href="../../../_static/css/theme.css" rel="stylesheet">
+  <link href="../../../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../../../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../../../_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
+    <script src="../../../_static/jquery.js"></script>
+    <script src="../../../_static/underscore.js"></script>
+    <script src="../../../_static/doctools.js"></script>
+    <script src="../../../_static/togglebutton.js"></script>
+    <script src="../../../_static/clipboard.min.js"></script>
+    <script src="../../../_static/copybutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../../../_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../../../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+    <link rel="prev" title="Validation report for ‘CCLM_Eurocordex’" href="../CCLM/validation_report.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../../../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../../../_static/icon.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Testing the IOW Earth system model</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../../../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../../intro.html">
+   IOW ESM test report
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  build_hlrng
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../../build_hlrng/build.html">
+   IOW ESM build report
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  output_hlrng
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../output.html">
+   IOW ESM output report
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../CCLM/validation_report.html">
+   Validation report for ‘
+   <code class="docutils literal notranslate">
+    <span class="pre">
+     CCLM_Eurocordex
+    </span>
+   </code>
+   ’
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Validation report for ‘
+   <code class="docutils literal notranslate">
+    <span class="pre">
+     MOM5_Baltic
+    </span>
+   </code>
+   ’
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../../../_sources/output_hlrng/coupled/MOM5/validation_report.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://git.io-warnemuende.de/iow_esm/tester"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="https://git.io-warnemuende.de/iow_esm/tester/issues/new?title=Issue%20on%20page%20%2Foutput_hlrng/coupled/MOM5/validation_report.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#general-information">
+   General information
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#report-description">
+     Report description
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#model-description">
+     Model description
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#performed-tasks">
+     Performed tasks
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#two-dimensional-seasonal-means">
+       <strong>
+        Two-dimensional seasonal means
+       </strong>
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#two-dimensional-seasonal-anomalies">
+       <strong>
+        Two-dimensional seasonal anomalies
+       </strong>
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#stations-and-regions">
+       <strong>
+        Stations and Regions
+       </strong>
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#time-series">
+       <strong>
+        Time series
+       </strong>
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#taylor-diagrams">
+       <strong>
+        Taylor Diagrams
+       </strong>
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#cost-functions">
+       <strong>
+        Cost functions
+       </strong>
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#vertical-profiles">
+       <strong>
+        Vertical profiles
+       </strong>
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#results">
+   Results
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#sea-surface-temperature-sst">
+     Sea surface temperature (SST)
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#description">
+       <strong>
+        Description
+       </strong>
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#reference-description">
+       <strong>
+        Reference description
+       </strong>
+      </a>
+      <ul class="nav section-nav flex-column">
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#seasons">
+         seasons
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#percentiles">
+         percentiles
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#stations">
+         stations
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#regions">
+         regions
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#time-series-operators">
+         time-series-operators
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#plot-config">
+         plot-config
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#reference-file-pattern">
+         reference-file-pattern
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#reference-variable-name">
+         reference-variable-name
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#reference-additional-operators">
+         reference-additional-operators
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#id1">
+         reference-description
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#plot-config-anomaly">
+         plot-config-anomaly
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#other-models">
+         other-models
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#long-name">
+         long-name
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#id2">
+         description
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id3">
+       <strong>
+        Two-dimensional seasonal means
+       </strong>
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id4">
+       <strong>
+        Two-dimensional seasonal anomalies
+       </strong>
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id5">
+       <strong>
+        Stations and Regions
+       </strong>
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id6">
+       <strong>
+        Time series
+       </strong>
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id7">
+       <strong>
+        Taylor Diagrams
+       </strong>
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id8">
+       <strong>
+        Cost functions
+       </strong>
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Validation report for ‘MOM5_Baltic’</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#general-information">
+   General information
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#report-description">
+     Report description
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#model-description">
+     Model description
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#performed-tasks">
+     Performed tasks
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#two-dimensional-seasonal-means">
+       <strong>
+        Two-dimensional seasonal means
+       </strong>
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#two-dimensional-seasonal-anomalies">
+       <strong>
+        Two-dimensional seasonal anomalies
+       </strong>
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#stations-and-regions">
+       <strong>
+        Stations and Regions
+       </strong>
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#time-series">
+       <strong>
+        Time series
+       </strong>
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#taylor-diagrams">
+       <strong>
+        Taylor Diagrams
+       </strong>
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#cost-functions">
+       <strong>
+        Cost functions
+       </strong>
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#vertical-profiles">
+       <strong>
+        Vertical profiles
+       </strong>
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#results">
+   Results
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#sea-surface-temperature-sst">
+     Sea surface temperature (SST)
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#description">
+       <strong>
+        Description
+       </strong>
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#reference-description">
+       <strong>
+        Reference description
+       </strong>
+      </a>
+      <ul class="nav section-nav flex-column">
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#seasons">
+         seasons
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#percentiles">
+         percentiles
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#stations">
+         stations
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#regions">
+         regions
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#time-series-operators">
+         time-series-operators
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#plot-config">
+         plot-config
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#reference-file-pattern">
+         reference-file-pattern
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#reference-variable-name">
+         reference-variable-name
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#reference-additional-operators">
+         reference-additional-operators
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#id1">
+         reference-description
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#plot-config-anomaly">
+         plot-config-anomaly
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#other-models">
+         other-models
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#long-name">
+         long-name
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#id2">
+         description
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id3">
+       <strong>
+        Two-dimensional seasonal means
+       </strong>
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id4">
+       <strong>
+        Two-dimensional seasonal anomalies
+       </strong>
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id5">
+       <strong>
+        Stations and Regions
+       </strong>
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id6">
+       <strong>
+        Time series
+       </strong>
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id7">
+       <strong>
+        Taylor Diagrams
+       </strong>
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id8">
+       <strong>
+        Cost functions
+       </strong>
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            
+              <div>
+                
+  <div class="tex2jax_ignore mathjax_ignore section" id="validation-report-for-mom5-baltic">
+<h1>Validation report for ‘<code class="docutils literal notranslate"><span class="pre">MOM5_Baltic</span></code>’<a class="headerlink" href="#validation-report-for-mom5-baltic" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="general-information">
+<h2>General information<a class="headerlink" href="#general-information" title="Permalink to this headline">¶</a></h2>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p></p></th>
+<th class="head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p>Created at:</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">2023-03-01</span> <span class="pre">11:46:40</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p>Created for output directory:</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/scratch/usr/mvkkarst/test_area</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/hlrng_example/output/coupled/MOM5_Baltic</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p>Start date:</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">19590101</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p>End date:</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">19590110</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p>User:</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">mvkkarst</span></code></p></td>
+</tr>
+</tbody>
+</table>
+<div class="section" id="report-description">
+<h3>Report description<a class="headerlink" href="#report-description" title="Permalink to this headline">¶</a></h3>
+<p>This is an example for the post-processing configuration.</p>
+</div>
+<div class="section" id="model-description">
+<h3>Model description<a class="headerlink" href="#model-description" title="Permalink to this headline">¶</a></h3>
+<hr style="border:1px solid gray">
+<h4 style="background-color: rgba(31, 119, 180, 0.5);"><b>`model1`</b></h4>
+</div>
+<div class="section" id="performed-tasks">
+<h3>Performed tasks<a class="headerlink" href="#performed-tasks" title="Permalink to this headline">¶</a></h3>
+<hr style="border:1px solid gray">
+<div class="section" id="two-dimensional-seasonal-means">
+<h4><strong>Two-dimensional seasonal means</strong><a class="headerlink" href="#two-dimensional-seasonal-means" title="Permalink to this headline">¶</a></h4>
+<p>This task generates figures containing two-dimensional seasonal means <span class="math notranslate nohighlight">\(\langle \phi \rangle_S(x,y)\)</span> for a season <span class="math notranslate nohighlight">\(s\)</span> and a three-dimensional variable <span class="math notranslate nohighlight">\(\phi(x,y,t)\)</span>, i.e.$<span class="math notranslate nohighlight">\( \langle \phi \rangle_S(x,y) = \frac{1}{N_S} \sum_{t\in S} \phi(x,y,t), \)</span><span class="math notranslate nohighlight">\(where \)</span>t<span class="math notranslate nohighlight">\( are all time steps that are contained in season \)</span>S<span class="math notranslate nohighlight">\(. The number of these time steps is given by \)</span>N_S$, where the considered time period is from <code class="docutils literal notranslate"><span class="pre">19590101</span></code> to <code class="docutils literal notranslate"><span class="pre">19590110</span></code>.</p>
+</div>
+<div class="section" id="two-dimensional-seasonal-anomalies">
+<h4><strong>Two-dimensional seasonal anomalies</strong><a class="headerlink" href="#two-dimensional-seasonal-anomalies" title="Permalink to this headline">¶</a></h4>
+<p>This task generates figures containing two-dimensional seasonal anomalies <span class="math notranslate nohighlight">\(\langle \Delta \phi \rangle_S(x,y)\)</span> for a season <span class="math notranslate nohighlight">\(s\)</span>, a three-dimensional variable <span class="math notranslate nohighlight">\(\phi(x,y,t)\)</span> and a three-dimensional reference field <span class="math notranslate nohighlight">\(\phi_{\mathrm{ref}}(x,y,t)\)</span> i.e.$<span class="math notranslate nohighlight">\( \langle \Delta \phi \rangle_S(x,y) = \frac{1}{N_S} \sum_{t\in S} \phi(x,y,t) - \phi_{\mathrm{ref}}(x,y,t) = \langle \phi \rangle_S(x,y) - \langle \phi_{\mathrm{ref}} \rangle_S(x,y) , \)</span><span class="math notranslate nohighlight">\(where \)</span>t<span class="math notranslate nohighlight">\( are all time steps that are contained in season \)</span>S<span class="math notranslate nohighlight">\(. The number of these time steps is given by \)</span>N_S$, where the considered time period is from <code class="docutils literal notranslate"><span class="pre">19590101</span></code> to <code class="docutils literal notranslate"><span class="pre">19590110</span></code>.</p>
+</div>
+<div class="section" id="stations-and-regions">
+<h4><strong>Stations and Regions</strong><a class="headerlink" href="#stations-and-regions" title="Permalink to this headline">¶</a></h4>
+<p>This task generates an image with the configured staitons and regions for which time series data is generated.For regions the time series is generated as the spatial mean over this region.Whereas for stations a remapping to the nearest neighboring grid cell is performed.</p>
+</div>
+<div class="section" id="time-series">
+<h4><strong>Time series</strong><a class="headerlink" href="#time-series" title="Permalink to this headline">¶</a></h4>
+<p>This task generates figures of temporal means according to the configured time-series operators, e.g. if you specfied <code class="docutils literal notranslate"><span class="pre">time_series_operators</span> <span class="pre">=</span> <span class="pre">[&quot;-monmean&quot;]</span></code>, a plot with monthly means is generated.Please refer to the <code class="docutils literal notranslate"><span class="pre">cdo</span></code> documentation for more information on these operators.If there are more than 100 samples in the time series and it is compared to reference data, a scatter plot is generated, where the <span class="math notranslate nohighlight">\(x\)</span> and <span class="math notranslate nohighlight">\(y\)</span> coordinates correspond to the reference samples and the model ones, respectively.</p>
+</div>
+<div class="section" id="taylor-diagrams">
+<h4><strong>Taylor Diagrams</strong><a class="headerlink" href="#taylor-diagrams" title="Permalink to this headline">¶</a></h4>
+<p>Taylor diagrams graphically indicate which of several model data represents best a given reference <a class="reference external" href="http://data.In">data.In</a> order to quantify the degree of correspondence between the modeled and observed behavior in terms of three statistics:the Pearson correlation coefficient, the root-mean-square error (RMSE) error, and the standard deviation.Here both data, model and reference, consist of the same number of samples that correspond to a time series starting from <code class="docutils literal notranslate"><span class="pre">19590101</span></code> and ending at <code class="docutils literal notranslate"><span class="pre">19590110</span></code>.</p>
+</div>
+<div class="section" id="cost-functions">
+<h4><strong>Cost functions</strong><a class="headerlink" href="#cost-functions" title="Permalink to this headline">¶</a></h4>
+<p>The cost function <span class="math notranslate nohighlight">\(c\)</span> as it is defined here, further summarizes the information given in a Taylor <a class="reference external" href="http://diagram.It">diagram.It</a> measures the root means square error <span class="math notranslate nohighlight">\(\epsilon = \sqrt{\frac{1}{N}\sum_{t=t_1}^{t_{N}} (\phi(t)-\phi_{\mathrm{ref}}(t))^2}\)</span> of the model data <span class="math notranslate nohighlight">\(\phi(t)\)</span>in units of the standard deviation <span class="math notranslate nohighlight">\(\sigma_{\mathrm{ref}}\)</span> of reference data <span class="math notranslate nohighlight">\(\phi_{\mathrm{ref}}(t)\)</span>, i.e.$<span class="math notranslate nohighlight">\( c = \epsilon / \sigma_{\mathrm{ref}}. \)</span><span class="math notranslate nohighlight">\(Both data consist of \)</span>N<span class="math notranslate nohighlight">\( samples corresponding to a time series starting from \)</span>t_1<span class="math notranslate nohighlight">\( and ending at \)</span>t_N$.</p>
+</div>
+<div class="section" id="vertical-profiles">
+<h4><strong>Vertical profiles</strong><a class="headerlink" href="#vertical-profiles" title="Permalink to this headline">¶</a></h4>
+<p>This task generates vertical profiles of a four-dimensional field <span class="math notranslate nohighlight">\(\phi(x, y, z, t)\)</span> at configured stations (using remapping to nearest neighbors) accompanied by performing the configured seasonal means.Vertical profiles that correspong to regions are created by an additional spatial mean over the particular region.</p>
+</div>
+</div>
+</div>
+<div class="section" id="results">
+<h2>Results<a class="headerlink" href="#results" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="sea-surface-temperature-sst">
+<h3>Sea surface temperature (SST)<a class="headerlink" href="#sea-surface-temperature-sst" title="Permalink to this headline">¶</a></h3>
+<hr style="border:2px solid gray">
+<details>
+<summary><b><i>Analysis</i></b></summary>
+<div class="section" id="description">
+<h4><strong>Description</strong><a class="headerlink" href="#description" title="Permalink to this headline">¶</a></h4>
+<p>This parameter is the temperature of sea water near the surface measured in degrees Celsius. The corresponding model output variable is called SST.</p>
+</div>
+<div class="section" id="reference-description">
+<h4><strong>Reference description</strong><a class="headerlink" href="#reference-description" title="Permalink to this headline">¶</a></h4>
+<p>Reference is taken from <a class="reference external" href="https://cds.climate.copernicus.eu/cdsapp#%21/dataset/reanalysis-era5-single-levels-monthly-means">https://cds.climate.copernicus.eu/cdsapp#!/dataset/reanalysis-era5-single-levels-monthly-means</a>. Search for “Sea surface temperature”</p>
+<details>
+<summary><i> Postprocess settings for variable sea surface temperature (SST) </i></summary>
+<p><span class="xref myst"><strong>Go to settings -&gt;</strong></span></p>
+<div class="section" id="seasons">
+<h5>seasons<a class="headerlink" href="#seasons" title="Permalink to this headline">¶</a></h5>
+<p><code class="docutils literal notranslate"><span class="pre">{'year':</span> <span class="pre">''}</span></code></p>
+<hr style="border:1px solid gray">
+</div>
+<div class="section" id="percentiles">
+<h5>percentiles<a class="headerlink" href="#percentiles" title="Permalink to this headline">¶</a></h5>
+<p><code class="docutils literal notranslate"><span class="pre">[]</span></code></p>
+<hr style="border:1px solid gray">
+</div>
+<div class="section" id="stations">
+<h5>stations<a class="headerlink" href="#stations" title="Permalink to this headline">¶</a></h5>
+<p><code class="docutils literal notranslate"><span class="pre">{'BY5':</span> <span class="pre">{'lat':</span> <span class="pre">'55.25',</span> <span class="pre">'lon':</span> <span class="pre">'15.98',</span> <span class="pre">'alternative-names':</span> <span class="pre">['BornholmdeepBY5']},</span> <span class="pre">'F9':</span> <span class="pre">{'lat':</span> <span class="pre">'64.71',</span> <span class="pre">'lon':</span> <span class="pre">'22.07',</span> <span class="pre">'alternative-names':</span> <span class="pre">['BothnianBayF9']},</span> <span class="pre">'SR5':</span> <span class="pre">{'lat':</span> <span class="pre">'61.08',</span> <span class="pre">'lon':</span> <span class="pre">'19.58',</span> <span class="pre">'alternative-names':</span> <span class="pre">['BothnianSeaSR5']},</span> <span class="pre">'BY31':</span> <span class="pre">{'lat':</span> <span class="pre">'58.58',</span> <span class="pre">'lon':</span> <span class="pre">'18.23',</span> <span class="pre">'alternative-names':</span> <span class="pre">['LandsortDeepBY31']},</span> <span class="pre">'BY15':</span> <span class="pre">{'lat':</span> <span class="pre">'57.3333',</span> <span class="pre">'lon':</span> <span class="pre">'20.05',</span> <span class="pre">'alternative-names':</span> <span class="pre">['GotlanddeepBY15']},</span> <span class="pre">'LL7':</span> <span class="pre">{'lat':</span> <span class="pre">'59.8465',</span> <span class="pre">'lon':</span> <span class="pre">'24.8378',</span> <span class="pre">'alternative-names':</span> <span class="pre">['GulfFinlandLL7']}}</span></code></p>
+<hr style="border:1px solid gray">
+</div>
+<div class="section" id="regions">
+<h5>regions<a class="headerlink" href="#regions" title="Permalink to this headline">¶</a></h5>
+<p><code class="docutils literal notranslate"><span class="pre">{'BALTIC_SEA':</span> <span class="pre">{'maskfile':</span> <span class="pre">'/scratch/usr/mvkkarst/test_area/hlrng_example/postprocess/MOM5/create_validation_report/../../../reference/masks/Baltic/BALTIC_SEA.nc'},</span> <span class="pre">'BOTHNIAN_GULF':</span> <span class="pre">{'maskfile':</span> <span class="pre">'/scratch/usr/mvkkarst/test_area/hlrng_example/postprocess/MOM5/create_validation_report/../../../reference/masks/Baltic/BOTHNIAN_GULF.nc'},</span> <span class="pre">'BALTIC_PROPER':</span> <span class="pre">{'maskfile':</span> <span class="pre">'/scratch/usr/mvkkarst/test_area/hlrng_example/postprocess/MOM5/create_validation_report/../../../reference/masks/Baltic/BALTIC_PROPER.nc'},</span> <span class="pre">'BELTS':</span> <span class="pre">{'maskfile':</span> <span class="pre">'/scratch/usr/mvkkarst/test_area/hlrng_example/postprocess/MOM5/create_validation_report/../../../reference/masks/Baltic/BELTS.nc'},</span> <span class="pre">'RIGA_FINLAND':</span> <span class="pre">{'maskfile':</span> <span class="pre">'/scratch/usr/mvkkarst/test_area/hlrng_example/postprocess/MOM5/create_validation_report/../../../reference/masks/Baltic/RIGA_FINLAND.nc'},</span> <span class="pre">'test':</span> <span class="pre">{'lat-min':</span> <span class="pre">'55.0',</span> <span class="pre">'lat-max':</span> <span class="pre">'56.0',</span> <span class="pre">'lon-min':</span> <span class="pre">'19.0',</span> <span class="pre">'lon-max':</span> <span class="pre">'20.0'}}</span></code></p>
+<hr style="border:1px solid gray">
+</div>
+<div class="section" id="time-series-operators">
+<h5>time-series-operators<a class="headerlink" href="#time-series-operators" title="Permalink to this headline">¶</a></h5>
+<p><code class="docutils literal notranslate"><span class="pre">['']</span></code></p>
+<hr style="border:1px solid gray">
+</div>
+<div class="section" id="plot-config">
+<h5>plot-config<a class="headerlink" href="#plot-config" title="Permalink to this headline">¶</a></h5>
+<p><code class="docutils literal notranslate"><span class="pre">{'min_value':</span> <span class="pre">0.0,</span> <span class="pre">'max_value':</span> <span class="pre">15.0,</span> <span class="pre">'delta_value':</span> <span class="pre">1.0,</span> <span class="pre">'contour':</span> <span class="pre">True,</span> <span class="pre">'color_map':</span> <span class="pre">'rainbow'}</span></code></p>
+<hr style="border:1px solid gray">
+</div>
+<div class="section" id="reference-file-pattern">
+<h5>reference-file-pattern<a class="headerlink" href="#reference-file-pattern" title="Permalink to this headline">¶</a></h5>
+<p><code class="docutils literal notranslate"><span class="pre">../../../reference/coupled/MOM5_Baltic/*/SST.nc</span></code></p>
+<hr style="border:1px solid gray">
+</div>
+<div class="section" id="reference-variable-name">
+<h5>reference-variable-name<a class="headerlink" href="#reference-variable-name" title="Permalink to this headline">¶</a></h5>
+<p><code class="docutils literal notranslate"><span class="pre">SST</span></code></p>
+<hr style="border:1px solid gray">
+</div>
+<div class="section" id="reference-additional-operators">
+<h5>reference-additional-operators<a class="headerlink" href="#reference-additional-operators" title="Permalink to this headline">¶</a></h5>
+<p>``</p>
+<hr style="border:1px solid gray">
+</div>
+<div class="section" id="id1">
+<h5>reference-description<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h5>
+<p><code class="docutils literal notranslate"><span class="pre">Reference</span> <span class="pre">is</span> <span class="pre">taken</span> <span class="pre">from</span> <span class="pre">https://cds.climate.copernicus.eu/cdsapp#!/dataset/reanalysis-era5-single-levels-monthly-means.</span> <span class="pre">Search</span> <span class="pre">for</span> <span class="pre">&quot;Sea</span> <span class="pre">surface</span> <span class="pre">temperature&quot;</span></code></p>
+<hr style="border:1px solid gray">
+</div>
+<div class="section" id="plot-config-anomaly">
+<h5>plot-config-anomaly<a class="headerlink" href="#plot-config-anomaly" title="Permalink to this headline">¶</a></h5>
+<p><code class="docutils literal notranslate"><span class="pre">{'min_value':</span> <span class="pre">-5.0,</span> <span class="pre">'max_value':</span> <span class="pre">5.0,</span> <span class="pre">'delta_value':</span> <span class="pre">1.0,</span> <span class="pre">'contour':</span> <span class="pre">True,</span> <span class="pre">'color_map':</span> <span class="pre">'seismic'}</span></code></p>
+<hr style="border:1px solid gray">
+</div>
+<div class="section" id="other-models">
+<h5>other-models<a class="headerlink" href="#other-models" title="Permalink to this headline">¶</a></h5>
+<p><code class="docutils literal notranslate"><span class="pre">{}</span></code></p>
+<hr style="border:1px solid gray">
+</div>
+<div class="section" id="long-name">
+<h5>long-name<a class="headerlink" href="#long-name" title="Permalink to this headline">¶</a></h5>
+<p><code class="docutils literal notranslate"><span class="pre">sea</span> <span class="pre">surface</span> <span class="pre">temperature</span></code></p>
+<hr style="border:1px solid gray">
+</div>
+<div class="section" id="id2">
+<h5>description<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h5>
+<p><code class="docutils literal notranslate"><span class="pre">This</span> <span class="pre">parameter</span> <span class="pre">is</span> <span class="pre">the</span> <span class="pre">temperature</span> <span class="pre">of</span> <span class="pre">sea</span> <span class="pre">water</span> <span class="pre">near</span> <span class="pre">the</span> <span class="pre">surface</span> <span class="pre">measured</span> <span class="pre">in</span> <span class="pre">degrees</span> <span class="pre">Celsius.</span> <span class="pre">The</span> <span class="pre">corresponding</span> <span class="pre">model</span> <span class="pre">output</span> <span class="pre">variable</span> <span class="pre">is</span> <span class="pre">called</span> <span class="pre">SST.</span></code></p>
+<hr style="border:1px solid gray">
+</details>
+</div>
+</div>
+<div class="section" id="id3">
+<h4><strong>Two-dimensional seasonal means</strong><a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h4>
+<hr style="border:1px solid gray">
+<details>
+<summary><b><i>Figures</b></i></summary>
+<p><span class="xref myst"><strong>Go to notebook -&gt;</strong></span></p>
+<p><span class="math notranslate nohighlight">\(\vphantom{M}\)</span></p>
+<p><img alt="" src="../../../_images/SST.png" /></p>
+<figure>
+    <figcaption align = "center"> <b> Fig. 1: </b> <b> Seasonal means for variable sea surface temperature (SST). </b>The rows correspond to different models whereas the columns reflect the various seaons that are considered.The $x$ and $y$ axis measure the longitudes and latitudes, respectively. </figcaption>
+</figure>  
+</details>
+</div>
+<div class="section" id="id4">
+<h4><strong>Two-dimensional seasonal anomalies</strong><a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h4>
+<hr style="border:1px solid gray">
+<details>
+<summary><b><i>Figures</b></i></summary>
+<p><span class="xref myst"><strong>Go to notebook -&gt;</strong></span></p>
+<p><span class="math notranslate nohighlight">\(\vphantom{M}\)</span></p>
+<p><img alt="" src="../../../_images/SST1.png" /></p>
+<figure>
+    <figcaption align = "center"> <b> Fig. 2: </b> <b> Seasonal anomalies for variable sea surface temperature (SST). </b>The rows correspond to different models whereas the columns reflect the various seaons that are considered.The $x$ and $y$ axis measure the longitudes and latitudes, respectively. </figcaption>
+</figure>  
+</details>
+</div>
+<div class="section" id="id5">
+<h4><strong>Stations and Regions</strong><a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h4>
+<hr style="border:1px solid gray">
+<details>
+<summary><b><i>Figures</b></i></summary>
+<p><span class="xref myst"><strong>Go to notebook -&gt;</strong></span></p>
+<p><span class="math notranslate nohighlight">\(\vphantom{M}\)</span></p>
+<p><img alt="" src="../../../_images/SST2.png" /></p>
+<figure>
+    <figcaption align = "center"> <b> Fig. 3: </b> <b> Stations and regions for variable sea surface temperature (SST). </b>Colored areas depict the different regions. The dots are located at the station's coordinates. </figcaption>
+</figure>  
+</details>
+</div>
+<div class="section" id="id6">
+<h4><strong>Time series</strong><a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h4>
+<hr style="border:1px solid gray">
+<details>
+<summary><b><i>Figures</b></i></summary>
+<p><span class="xref myst"><strong>Go to notebook -&gt;</strong></span></p>
+<p><span class="math notranslate nohighlight">\(\vphantom{M}\)</span></p>
+<p><img alt="" src="../../../_images/SST-regions.png" /></p>
+<figure>
+    <figcaption align = "center"> <b> Fig. 4: </b> <b>Time series for variable sea surface temperature (SST). </b>Shaded areas depict the $\pm 2 \sigma$ vicinity (approximately the 95% confidence interval) around the mean values. </figcaption>
+</figure>  
+<p><span class="math notranslate nohighlight">\(\vphantom{M}\)</span></p>
+<p><img alt="" src="../../../_images/SST-stations.png" /></p>
+<figure>
+    <figcaption align = "center"> <b> Fig. 5: </b> <b>Time series for variable sea surface temperature (SST). </b>Shaded areas depict the $\pm 2 \sigma$ vicinity (approximately the 95% confidence interval) around the mean values. </figcaption>
+</figure>  
+</details>
+</div>
+<div class="section" id="id7">
+<h4><strong>Taylor Diagrams</strong><a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h4>
+<hr style="border:1px solid gray">
+<details>
+<summary><b><i>Figures</b></i></summary>
+<p><span class="xref myst"><strong>Go to notebook -&gt;</strong></span></p>
+<p><span class="math notranslate nohighlight">\(\vphantom{M}\)</span></p>
+<p><img alt="" src="../../../_images/SST-regions1.png" /></p>
+<figure>
+    <figcaption align = "center"> <b> Fig. 6: </b> <b> Taylor diagrams for variable sea surface temperature (SST). </b>Colored stars stand for the model result and the black circle is the reference.The standard deviation of the data is measured on the radial axis whereas the correaltion to the reference is given by the angle;depicted is the arcus cosine of the angle.The colormap refers to the root means square error of the model data with respect to the reference data.The rows correspond to the different regions and stations whereas the columns are related to the different kind of time series. </figcaption>
+</figure>  
+<p><span class="math notranslate nohighlight">\(\vphantom{M}\)</span></p>
+<p><img alt="" src="../../../_images/SST-stations1.png" /></p>
+<figure>
+    <figcaption align = "center"> <b> Fig. 7: </b> <b> Taylor diagrams for variable sea surface temperature (SST). </b>Colored stars stand for the model result and the black circle is the reference.The standard deviation of the data is measured on the radial axis whereas the correaltion to the reference is given by the angle;depicted is the arcus cosine of the angle.The colormap refers to the root means square error of the model data with respect to the reference data.The rows correspond to the different regions and stations whereas the columns are related to the different kind of time series. </figcaption>
+</figure>  
+</details>
+</div>
+<div class="section" id="id8">
+<h4><strong>Cost functions</strong><a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h4>
+<hr style="border:1px solid gray">
+<details>
+<summary><b><i>Figures</b></i></summary>
+<p><span class="xref myst"><strong>Go to notebook -&gt;</strong></span></p>
+<p><span class="math notranslate nohighlight">\(\vphantom{M}\)</span></p>
+<p><img alt="" src="../../../_images/SST-regions2.png" /></p>
+<figure>
+    <figcaption align = "center"> <b> Fig. 8: </b> <b> Cost functions $c$ for variable sea surface temperature (SST). </b>The colors refer to the magnitude of the cost function: green means very good $( 0 \leq c < 1 )$,yellow stands for satisfactory $( 1 < c < 2 )$ and red shows bad quality $( c \geq 2 )$.<b>Bold</b> numbers correspond to the best performing model, whereas <i>italic</i> number refer to the worst performing model for that particular station/region and kind of time series.The rows correspond to the different regions and stations whereas the columns are related to the different temporal means and models. </figcaption>
+</figure>  
+<p><span class="math notranslate nohighlight">\(\vphantom{M}\)</span></p>
+<p><img alt="" src="../../../_images/SST-stations2.png" /></p>
+<figure>
+    <figcaption align = "center"> <b> Fig. 9: </b> <b> Cost functions $c$ for variable sea surface temperature (SST). </b>The colors refer to the magnitude of the cost function: green means very good $( 0 \leq c < 1 )$,yellow stands for satisfactory $( 1 < c < 2 )$ and red shows bad quality $( c \geq 2 )$.<b>Bold</b> numbers correspond to the best performing model, whereas <i>italic</i> number refer to the worst performing model for that particular station/region and kind of time series.The rows correspond to the different regions and stations whereas the columns are related to the different temporal means and models. </figcaption>
+</figure>  
+</details>
+</details>
+</div>
+</div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./output_hlrng/coupled/MOM5"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            
+                <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="../CCLM/validation_report.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Validation report for ‘<code class="docutils literal notranslate"><span class="pre">CCLM_Eurocordex</span></code>’</p>
+        </div>
+    </a>
+</div>
+            
+        </div>
+    </div>
+    <footer class="footer">
+  <p>
+    
+      By Sven Karsten<br/>
+    
+        &copy; Copyright 2021.<br/>
+  </p>
+</footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../../../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>
