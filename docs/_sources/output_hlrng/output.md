@@ -3,15 +3,7 @@
 
 ## Output report for `hlrng_example` and input folder `coupled`
 
-Output `['CCLM_Eurocordex', 'MOM5_Baltic']` has been generated for hlrng_example and input folder `coupled`.
-
-### CCLM
-
-Validation report has been generated for CCLM.
-
-### MOM5
-
-Validation report has been generated for MOM5.
+**Could not find output for hlrng_example and input folder `coupled`**
 
 
 

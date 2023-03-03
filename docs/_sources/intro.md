@@ -14,14 +14,14 @@ The test thas been performed on `hlrng hlrnb`.
 |Build:components/flux_calculator|`True`|
 |Build:components/OASIS3-MCT|`True`|
 |Build:tools/I2LM|`True`|
-|Output:hlrng_example:coupled|`True`|
+|Output:hlrng_example:coupled|`False`|
 |Output:hlrng_example:int2lm|`True`|
 |Output:hlrng_example:uncoupled-CCLM|`True`|
 |Output:hlrng_example:uncoupled-MOM5|`True`|
-### Success
+### Failure
 
 
-<span style="color:green">All checkpoints succeeded!</span>
+1 checkpoints failed!
 
 
 ## Test summary for hlrnb
