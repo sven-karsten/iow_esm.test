@@ -5,7 +5,7 @@
 |||
 |---|---|
 |||
-|Created at:                    |`2023-03-02 16:16:05`|
+|Created at:                    |`2023-03-17 17:55:24`|
 |Created for output directory:  |`/scratch/usr/mvkkarst/test_area`|
 |                               |`/hlrnb_example/output/coupled/MOM5_Baltic`|
 |Start date:                    |`19590101`|
