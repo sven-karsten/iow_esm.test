@@ -52,7 +52,7 @@ const thebe_selector_output = ".output, .cell_output"
     <script async="async" src="_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="IOW ESM build report" href="build_hlrng/build.html" />
+    <link rel="next" title="IOW ESM build report" href="build_hlrnb/build.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -113,52 +113,6 @@ const thebe_selector_output = ".output, .cell_output"
             </li>
         </ul>
         <p aria-level="2" class="caption" role="heading">
- <span class="caption-text">
-  build_hlrng
- </span>
-</p>
-<ul class="nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="build_hlrng/build.html">
-   IOW ESM build report
-  </a>
- </li>
-</ul>
-<p aria-level="2" class="caption" role="heading">
- <span class="caption-text">
-  output_hlrng
- </span>
-</p>
-<ul class="nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="output_hlrng/output.html">
-   IOW ESM output report
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="output_hlrng/coupled/CCLM/validation_report.html">
-   Validation report for ‘
-   <code class="docutils literal notranslate">
-    <span class="pre">
-     CCLM_Eurocordex
-    </span>
-   </code>
-   ’
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="output_hlrng/coupled/MOM5/validation_report.html">
-   Validation report for ‘
-   <code class="docutils literal notranslate">
-    <span class="pre">
-     MOM5_Baltic
-    </span>
-   </code>
-   ’
-  </a>
- </li>
-</ul>
-<p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
   build_hlrnb
  </span>
@@ -381,25 +335,13 @@ title="Print to PDF"
     <nav id="bd-toc-nav" aria-label="Page">
         <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#test-summary-for-hlrng">
-   Test summary for hlrng
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#success">
-     Success
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#test-summary-for-hlrnb">
    Test summary for hlrnb
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#failure">
-     Failure
+    <a class="reference internal nav-link" href="#success">
+     Success
     </a>
    </li>
   </ul>
@@ -424,25 +366,13 @@ title="Print to PDF"
                         <nav aria-label="Page">
                             <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#test-summary-for-hlrng">
-   Test summary for hlrng
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#success">
-     Success
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#test-summary-for-hlrnb">
    Test summary for hlrnb
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#failure">
-     Failure
+    <a class="reference internal nav-link" href="#success">
+     Success
     </a>
    </li>
   </ul>
@@ -460,50 +390,7 @@ title="Print to PDF"
   <section class="tex2jax_ignore mathjax_ignore" id="iow-esm-test-report">
 <h1>IOW ESM test report<a class="headerlink" href="#iow-esm-test-report" title="Permalink to this headline">#</a></h1>
 <p>This is an IOW ESM test report.
-The test thas been performed on <code class="docutils literal notranslate"><span class="pre">hlrng</span> <span class="pre">hlrnb</span></code>.</p>
-<section id="test-summary-for-hlrng">
-<h2>Test summary for hlrng<a class="headerlink" href="#test-summary-for-hlrng" title="Permalink to this headline">#</a></h2>
-<table class="colwidths-auto table">
-<thead>
-<tr class="row-odd"><th class="head"><p>checkpoint</p></th>
-<th class="head"><p>success</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p>Build:components/CCLM</p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">True</span></code></p></td>
-</tr>
-<tr class="row-odd"><td><p>Build:components/MOM5</p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">True</span></code></p></td>
-</tr>
-<tr class="row-even"><td><p>Build:components/flux_calculator</p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">True</span></code></p></td>
-</tr>
-<tr class="row-odd"><td><p>Build:components/OASIS3-MCT</p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">True</span></code></p></td>
-</tr>
-<tr class="row-even"><td><p>Build:tools/I2LM</p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">True</span></code></p></td>
-</tr>
-<tr class="row-odd"><td><p>Output:hlrng_example:coupled</p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">True</span></code></p></td>
-</tr>
-<tr class="row-even"><td><p>Output:hlrng_example:int2lm</p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">True</span></code></p></td>
-</tr>
-<tr class="row-odd"><td><p>Output:hlrng_example:uncoupled-CCLM</p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">True</span></code></p></td>
-</tr>
-<tr class="row-even"><td><p>Output:hlrng_example:uncoupled-MOM5</p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">True</span></code></p></td>
-</tr>
-</tbody>
-</table>
-<section id="success">
-<h3>Success<a class="headerlink" href="#success" title="Permalink to this headline">#</a></h3>
-<p><span style="color:green">All checkpoints succeeded!</span></p>
-</section>
-</section>
+The test thas been performed on <code class="docutils literal notranslate"><span class="pre">hlrnb</span></code>.</p>
 <section id="test-summary-for-hlrnb">
 <h2>Test summary for hlrnb<a class="headerlink" href="#test-summary-for-hlrnb" title="Permalink to this headline">#</a></h2>
 <table class="colwidths-auto table">
@@ -531,26 +418,13 @@ The test thas been performed on <code class="docutils literal notranslate"><span
 <tr class="row-odd"><td><p>Output:hlrnb_example:coupled</p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">True</span></code></p></td>
 </tr>
-<tr class="row-even"><td><p>Output:hlrnb_example:int2lm</p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">False</span></code></p></td>
-</tr>
-<tr class="row-odd"><td><p>Output:hlrnb_example:uncoupled-CCLM</p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">True</span></code></p></td>
-</tr>
-<tr class="row-even"><td><p>Output:hlrnb_example:uncoupled-MOM5</p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">True</span></code></p></td>
-</tr>
 </tbody>
 </table>
-<section id="failure">
-<h3>Failure<a class="headerlink" href="#failure" title="Permalink to this headline">#</a></h3>
-<p>1 checkpoints failed!</p>
+<section id="success">
+<h3>Success<a class="headerlink" href="#success" title="Permalink to this headline">#</a></h3>
+<p><span style="color:green">All checkpoints succeeded!</span></p>
 </section>
 </section>
-<div class="toctree-wrapper compound">
-</div>
-<div class="toctree-wrapper compound">
-</div>
 <div class="toctree-wrapper compound">
 </div>
 <div class="toctree-wrapper compound">
@@ -584,7 +458,7 @@ The test thas been performed on <code class="docutils literal notranslate"><span
                 
     <!-- Previous / next buttons -->
 <div class='prev-next-area'>
-    <a class='right-next' id="next-link" href="build_hlrng/build.html" title="next page">
+    <a class='right-next' id="next-link" href="build_hlrnb/build.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
         <p class="prev-next-title">IOW ESM build report</p>

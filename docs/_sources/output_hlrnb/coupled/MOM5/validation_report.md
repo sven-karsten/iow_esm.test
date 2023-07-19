@@ -4,8 +4,8 @@
 
 |||
 |---|---|
-|||
-|Created at:                    |`2023-03-17 17:55:24`|
+|**Name:** | **`compare_to_reference`**|
+|Created at:                    |`2023-07-19 12:55:31`|
 |Created for output directory:  |`/scratch/usr/mvkkarst/test_area`|
 |                               |`/hlrnb_example/output/coupled/MOM5_Baltic`|
 |Start date:                    |`19590101`|
@@ -18,7 +18,7 @@
 ### Report description
 
 
-This is an example for the post-processing configuration.
+This is an example validation report for the standard test setup.
 
 
     
@@ -27,9 +27,13 @@ This is an example for the post-processing configuration.
 
 <hr style="border:1px solid gray">
 
-<h4 style="background-color: rgba(31, 119, 180, 0.5);"><b>`model1`</b></h4>
+<h4 style="background-color: rgba(31, 119, 180, 0.5);"><b>`MOM5.test`</b></h4>
 
 
+
+This CCLM model was running with the standard test setup
+
+    
 
 ### Performed tasks
 
@@ -94,6 +98,16 @@ This parameter is the temperature of sea water near the surface measured in degr
 
 Reference is taken from https://cds.climate.copernicus.eu/cdsapp#!/dataset/reanalysis-era5-single-levels-monthly-means. Search for "Sea surface temperature"
 
+#### **Comparison to other models**
+
+  $\vphantom{M}$ 
+
+
+<h5 style="background-color: rgba(255, 127, 14, 0.5);"><b>`MOM5.coupled`</b></h5>
+
+This is the coupled MOM5 that was running with the standard test setup.
+
+
 
 
 <details>
@@ -108,7 +122,7 @@ Reference is taken from https://cds.climate.copernicus.eu/cdsapp#!/dataset/reana
 <hr style="border:1px solid gray">
 
 ##### percentiles
-`[]`
+`['25', '75']`
 
 <hr style="border:1px solid gray">
 
@@ -158,7 +172,7 @@ Reference is taken from https://cds.climate.copernicus.eu/cdsapp#!/dataset/reana
 <hr style="border:1px solid gray">
 
 ##### other-models
-`{}`
+`{'MOM5.coupled': {'root': '/scratch/usr/mvkkarst/test_area/hlrnb_example/postprocess/MOM5/create_validation_report/..', 'output-name': 'compare_to_referencecoupled-MOM5_Baltic', 'description': 'This is the coupled MOM5 that was running with the standard test setup.'}}`
 
 <hr style="border:1px solid gray">
 
@@ -178,52 +192,6 @@ Reference is taken from https://cds.climate.copernicus.eu/cdsapp#!/dataset/reana
 </details>
 
     
-#### **Two-dimensional seasonal means**
-
-<hr style="border:1px solid gray">
-
-<details>
-<summary><b><i>Figures</b></i></summary>
-
-[**Go to notebook ->**](../../../compare_2D_means/results/coupled_MOM5_Baltic-19590101_19590110/compare_2D_means.ipynb)
-
-
-
- $\vphantom{M}$
-
-![](./figures/compare_2D_means/SST.png)
-<figure>
-    <figcaption align = "center"> <b> Fig. 1: </b> <b> Seasonal means for variable sea surface temperature (SST). </b>The rows correspond to different models whereas the columns reflect the various seaons that are considered.The $x$ and $y$ axis measure the longitudes and latitudes, respectively. </figcaption>
-</figure>  
-
-
-
-</details>
-
-
-#### **Two-dimensional seasonal anomalies**
-
-<hr style="border:1px solid gray">
-
-<details>
-<summary><b><i>Figures</b></i></summary>
-
-[**Go to notebook ->**](../../../compare_2D_anomalies/results/coupled_MOM5_Baltic-19590101_19590110/compare_2D_anomalies.ipynb)
-
-
-
- $\vphantom{M}$
-
-![](./figures/compare_2D_anomalies/SST.png)
-<figure>
-    <figcaption align = "center"> <b> Fig. 2: </b> <b> Seasonal anomalies for variable sea surface temperature (SST). </b>The rows correspond to different models whereas the columns reflect the various seaons that are considered.The $x$ and $y$ axis measure the longitudes and latitudes, respectively. </figcaption>
-</figure>  
-
-
-
-</details>
-
-
 #### **Stations and Regions**
 
 <hr style="border:1px solid gray">
@@ -231,7 +199,7 @@ Reference is taken from https://cds.climate.copernicus.eu/cdsapp#!/dataset/reana
 <details>
 <summary><b><i>Figures</b></i></summary>
 
-[**Go to notebook ->**](../../../draw_stations_and_regions/results/coupled_MOM5_Baltic-19590101_19590110/draw_stations_and_regions.ipynb)
+[**Go to notebook ->**](../../../draw_stations_and_regions/results/compare_to_reference_coupled_MOM5_Baltic-19590101_19590110/draw_stations_and_regions.ipynb)
 
 
 
@@ -239,103 +207,7 @@ Reference is taken from https://cds.climate.copernicus.eu/cdsapp#!/dataset/reana
 
 ![](./figures/draw_stations_and_regions/SST.png)
 <figure>
-    <figcaption align = "center"> <b> Fig. 3: </b> <b> Stations and regions for variable sea surface temperature (SST). </b>Colored areas depict the different regions. The dots are located at the station's coordinates. </figcaption>
-</figure>  
-
-
-
-</details>
-
-
-#### **Time series**
-
-<hr style="border:1px solid gray">
-
-<details>
-<summary><b><i>Figures</b></i></summary>
-
-[**Go to notebook ->**](../../../compare_time_series/results/coupled_MOM5_Baltic-19590101_19590110/compare_time_series.ipynb)
-
-
-
- $\vphantom{M}$
-
-![](./figures/compare_time_series/SST-regions.png)
-<figure>
-    <figcaption align = "center"> <b> Fig. 4: </b> <b>Time series for variable sea surface temperature (SST). </b>Shaded areas depict the $\pm 2 \sigma$ vicinity (approximately the 95% confidence interval) around the mean values. </figcaption>
-</figure>  
-
-
-
- $\vphantom{M}$
-
-![](./figures/compare_time_series/SST-stations.png)
-<figure>
-    <figcaption align = "center"> <b> Fig. 5: </b> <b>Time series for variable sea surface temperature (SST). </b>Shaded areas depict the $\pm 2 \sigma$ vicinity (approximately the 95% confidence interval) around the mean values. </figcaption>
-</figure>  
-
-
-
-</details>
-
-
-#### **Taylor Diagrams**
-
-<hr style="border:1px solid gray">
-
-<details>
-<summary><b><i>Figures</b></i></summary>
-
-[**Go to notebook ->**](../../../create_taylor_diagrams/results/coupled_MOM5_Baltic-19590101_19590110/create_taylor_diagrams.ipynb)
-
-
-
- $\vphantom{M}$
-
-![](./figures/create_taylor_diagrams/SST-regions.png)
-<figure>
-    <figcaption align = "center"> <b> Fig. 6: </b> <b> Taylor diagrams for variable sea surface temperature (SST). </b>Colored stars stand for the model result and the black circle is the reference.The standard deviation of the data is measured on the radial axis whereas the correaltion to the reference is given by the angle;depicted is the arcus cosine of the angle.The colormap refers to the root means square error of the model data with respect to the reference data.The rows correspond to the different regions and stations whereas the columns are related to the different kind of time series. </figcaption>
-</figure>  
-
-
-
- $\vphantom{M}$
-
-![](./figures/create_taylor_diagrams/SST-stations.png)
-<figure>
-    <figcaption align = "center"> <b> Fig. 7: </b> <b> Taylor diagrams for variable sea surface temperature (SST). </b>Colored stars stand for the model result and the black circle is the reference.The standard deviation of the data is measured on the radial axis whereas the correaltion to the reference is given by the angle;depicted is the arcus cosine of the angle.The colormap refers to the root means square error of the model data with respect to the reference data.The rows correspond to the different regions and stations whereas the columns are related to the different kind of time series. </figcaption>
-</figure>  
-
-
-
-</details>
-
-
-#### **Cost functions**
-
-<hr style="border:1px solid gray">
-
-<details>
-<summary><b><i>Figures</b></i></summary>
-
-[**Go to notebook ->**](../../../get_cost_function/results/coupled_MOM5_Baltic-19590101_19590110/get_cost_function.ipynb)
-
-
-
- $\vphantom{M}$
-
-![](./figures/get_cost_function/SST-regions.png)
-<figure>
-    <figcaption align = "center"> <b> Fig. 8: </b> <b> Cost functions $c$ for variable sea surface temperature (SST). </b>The colors refer to the magnitude of the cost function: green means very good $( 0 \leq c < 1 )$,yellow stands for satisfactory $( 1 < c < 2 )$ and red shows bad quality $( c \geq 2 )$.<b>Bold</b> numbers correspond to the best performing model, whereas <i>italic</i> number refer to the worst performing model for that particular station/region and kind of time series.The rows correspond to the different regions and stations whereas the columns are related to the different temporal means and models. </figcaption>
-</figure>  
-
-
-
- $\vphantom{M}$
-
-![](./figures/get_cost_function/SST-stations.png)
-<figure>
-    <figcaption align = "center"> <b> Fig. 9: </b> <b> Cost functions $c$ for variable sea surface temperature (SST). </b>The colors refer to the magnitude of the cost function: green means very good $( 0 \leq c < 1 )$,yellow stands for satisfactory $( 1 < c < 2 )$ and red shows bad quality $( c \geq 2 )$.<b>Bold</b> numbers correspond to the best performing model, whereas <i>italic</i> number refer to the worst performing model for that particular station/region and kind of time series.The rows correspond to the different regions and stations whereas the columns are related to the different temporal means and models. </figcaption>
+    <figcaption align = "center"> <b> Fig. 1: </b> <b> Stations and regions for variable sea surface temperature (SST). </b>Colored areas depict the different regions. The dots are located at the station's coordinates. </figcaption>
 </figure>  
 
 
